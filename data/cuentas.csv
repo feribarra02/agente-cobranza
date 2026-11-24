@@ -1,0 +1,64 @@
+cuenta_id,cliente,telefono,canal_preferido,producto,monto_vencido,dias_atraso,fecha_vencimiento,fecha_ultimo_pago,pagos_atrasados_12m,promesas_incumplidas,fecha_promesa_pago,monto_promesa,fecha_ultimo_contacto,notas
+C-1031,MARISOL MEDINA MORALES,33 6335 5867,WhatsApp,Crédito personal,6061.69,22,2026-11-01,2026-10-15,0,0,2026-11-22,6061.69,13/11/2026,Prometió pago por teléfono el 20/11/2026
+C-1015,Jorge Gómez Reyes,+52 33 7334 9694,WhatsApp,Crédito personal,"4,258.07 MXN",1,22/11/2026,08-oct-2026,1,0,,,2026-11-14,Cambió de domicilio en agosto
+C-1023,Ana Jiménez Hernández,(33) 1293-2051,SMS,Microcrédito,3255,23,31-oct-2026,2026-10-08,3,0,,,2026-11-22,Nómina se deposita los días 15 y 30
+C-1044,Carlos González Ramírez,33 3863 1889,SMS,Crédito automotriz,"7.541,93",31,2026-11-03,28/10/2026,1,0,,,2026-10-25,Cliente desde 2022
+C-1013,Laura Flores Salazar,(33) 7450-7996,SMS,Crédito de nómina,"$7,829.80",12,2026-11-11,2026-10-10,1,0,,,15-nov-2026,Avisó que viajaba la semana pasada
+C-1009,Laura Cortés Medina,3389973267,WhatsApp,Crédito personal,"5.712,10",4,2026-11-19,12/10/2026,2,0,,,,Cliente desde 2022
+C-1022,Ricardo Rodríguez Jiménez,3388192226,WhatsApp,Crédito automotriz,1893,3,20-nov-2026,2026-10-08,0,0,,,,"Trabaja por cuenta propia, ingresos variables"
+C-1026,Patricia Cortés Cruz,(33) 3132-3055,SMS,Crédito personal,26503,68,16-sep-2026,2026-10-21,4,0,,,2026-10-27,
+C-1014,Raúl Ortiz Ramírez,3324195808,WhatsApp,Crédito automotriz,"3.016,15",8,2026-11-15,27/09/2026,3,0,,,2026-11-16,
+C-1012,MIGUEL MARTÍNEZ VÁZQUEZ,+52 33 4705 6717,WhatsApp,Crédito automotriz,"6,722.51 MXN",27,21/10/2026,17-sep-2026,5,0,,,2026-11-08,
+C-1020,Carlos Ramírez López,33 8296 7471,WhatsApp,Crédito automotriz,4245,27,10/27/2026,2026-10-21,1,0,,,2026-11-16,Referido por sucursal Zapopan
+C-1006,Ana Mendoza Pérez,+52 33 9012 6237,WhatsApp,Crédito de nómina,"$6,975.85",3,2026-11-20,2026-09-15,3,0,,,,Cambió de domicilio en agosto
+C-1042,Sofía Martínez Sánchez,3398141473,WhatsApp,Crédito automotriz,"8.418,47",4,2026-11-19,09/10/2026,2,0,,,,Nómina se deposita los días 15 y 30
+C-1007,Jorge Hernández Chávez,+52 33 5425 2858,SMS,Crédito automotriz,$0.00,6,2026-11-17,2026-11-22,0,0,,,,"Pago aplicado 22/11/2026 por $2,450.00"
+C-1037,Miguel Mendoza Hernández,(33) 5900-9204,SMS,Crédito personal,"1.769,78",28,2026-10-26,09/10/2026,3,0,,,2026-11-02,Convenio de pago cancelado el 02/11/2026 por incumplimiento de la primera mensualidad
+C-1032,Ana Cruz Martínez,3392241562,SMS,Crédito automotriz,"9,800.00 MXN",35,19/10/2026,16-oct-2026,3,0,,,2026-10-29,"Convenio de pago firmado el 18/11/2026, 4 mensualidades"
+C-1003,PABLO RODRÍGUEZ CORTÉS,3377113227,WhatsApp,Crédito de nómina,8634.02,12,2026-11-17,2026-10-29,3,0,,,29/10/2026,Nómina se deposita los días 15 y 30
+C-1017,Manuel Aguilar Domínguez,+52 33 1566 1785,SMS,Crédito automotriz,"6,730.92 MXN",21,02/11/2026,27-oct-2026,3,0,,,2026-11-09,Pidió que no se le llame en horario laboral
+C-1049,Verónica Sánchez Chávez,3323444561,WhatsApp,Crédito automotriz,107289.04,10,2026-11-13,2026-09-14,0,0,,,09/11/2026,Cliente desde 2022
+C-1018,Diana Ortiz Díaz,+52 33 2588 3833,SMS,Crédito de nómina,"1,757.85 MXN",18,05/11/2026,28-oct-2026,3,1,2026-11-19,"1,757.85 MXN",2026-11-14,Prometió pagar y no cumplió
+C-1034,Juan Cortés López,33 3829 7316,SMS,Microcrédito,13753.80,103,2026-08-12,2026-09-29,6,0,,,07/11/2026,Avisó que viajaba la semana pasada
+C-1021,Rafael Cruz Medina,+52 33 2577 2134,WhatsApp,Crédito automotriz,"1,067.14 MXN",14,09/11/2026,19-oct-2026,1,0,,,2026-10-31,"Respondió al recordatorio del 15/11: 'ese crédito yo lo cancelé, este saldo no es mío'"
+C-1052,Gabriela L. Ramírez,+52 33 3886 8098,WhatsApp,Crédito de nómina,"4.346,82",52,2026-10-02,15/09/2026,5,0,,,2026-10-26,Nómina se deposita los días 15 y 30
+C-1060,ALEJANDRO MEDINA GÓMEZ,+52 33 9330 5746,SMS,Crédito de nómina,"6.442,13",13,2026-11-10,11/10/2026,1,0,,,2026-11-19,Nómina se deposita los días 15 y 30
+C-1006,Ana Mendoza Pérez,+52 33 9012 6237,WhatsApp,Crédito de nómina,6976,4,2026-11-20,2026-09-15,3,0,,,,Cambió de domicilio en agosto
+C-1025,Ricardo Guerrero Pérez,(33) 4728-7962,WhatsApp,Crédito automotriz,4359.30,27,2026-10-27,2026-09-28,3,2,2026-11-17,4359.30,08/11/2026,Segunda promesa incumplida
+C-1061,Manuel Aguilar Domínguez,+52 33 1566 1785,SMS,Crédito automotriz,"6,730.92 MXN",21,02/11/2026,27-oct-2026,3,0,,,2026-11-09,Pidió que no se le llame en horario laboral
+C-1016,Francisco Flores López,+52 33 8488 4988,SMS,Microcrédito,1420,29,23-oct-2026,2026-10-07,4,0,,,2026-10-25,Contesta siempre al primer mensaje
+C-1027,Marisol Cortés Sánchez,,WhatsApp,Crédito automotriz,"4,287.06 MXN",10,13/11/2026,14-oct-2026,1,0,,,2026-11-06,
+C-1055,Patricia Ramos Domínguez,33 7692 9233,SMS,Microcrédito,64000.00,8,2026-11-15,2026-10-05,2,0,,,15/11/2026,"Convenio de pago firmado el 11/11/2026, 4 mensualidades"
+C-1002,Arturo Martínez Mendoza,(33) 4057-6547,SMS,Microcrédito,7890.83,9,2026-11-14,2026-10-13,0,0,,,30/10/2026,Cliente desde 2022
+C-1038,Ricardo Salazar Ortiz,3394982098,WhatsApp,Microcrédito,952.85,12,2026-11-11,2026-10-28,2,0,,,25/10/2026,Queja Q-1980 por comisión cerrada y resuelta el 10/11/2026; cliente conforme
+C-1052,Gabriela Lara Ramírez,+52 33 3886 8098,WhatsApp,Crédito de nómina,"4.346,82",52,2026-10-02,15/09/2026,5,0,,,2026-10-26,Nómina se deposita los días 15 y 30
+C-1058,Arturo Chávez Rojas,33 8175 2903,SMS,Microcrédito,"1.200,00",4,2026-11-19,21/11/2026,3,0,,,,"Cliente depositó el 21/11 $1,200.00; pendiente de aplicar por conciliación bancaria"
+C-1019,Patricia Mendoza Flores,3344347522,WhatsApp,Crédito automotriz,1941,25,29-oct-2026,2026-09-21,3,1,2026-11-14,1941,2026-11-05,Prometió pagar y no cumplió
+C-1054,SERGIO RAMÍREZ RAMOS,3392846920,SMS,Crédito de nómina,3697,4,19-nov-2026,2026-09-25,0,0,,,,
+C-1048,Iván Gutiérrez Reyes,33 3117 1819,SMS,Microcrédito,"18.241,38",91,2026-08-24,22/09/2026,6,0,,,2026-11-08,Referido por sucursal Zapopan
+C-1050,MIGUEL JIMÉNEZ PÉREZ,(33) 9796-3124,WhatsApp,Crédito de nómina,58000,20,03-nov-2026,2026-09-25,1,0,,,2026-11-17,"20/11 respondió SMS: 'no estoy de acuerdo con los intereses, hablaré con el gerente'"
+C-1046,Verónica Salazar Salazar,(33) 3861-1410,WhatsApp,Microcrédito,"$4,069.11",54,09/30/2026,2026-10-25,4,0,,,24-oct-2026,
+C-1033,Gabriela Lara Gómez,(33) 2530-9725,WhatsApp,Crédito automotriz,1481.22,18,2026-11-31,2026-10-03,2,0,,,30/10/2026,
+C-1005,Ana Rojas Sánchez,+52 33 1947 6908,WhatsApp,Crédito personal,"3,238.50 MXN",14,09/11/2026,26-oct-2026,2,0,2026-11-26,"1,619.25 MXN",2026-11-02,Prometió pago por teléfono el 20/11/2026
+C-1041,Patricia Rojas Hernández,+52 33 7539 8680,WhatsApp,Crédito automotriz,"$21,800.00",70,2026-09-14,2026-10-14,3,0,25/11/2026,"$3,718.99",28-oct-2026,Prometió pago por teléfono el 17/11/2026
+C-1051,Fernando Sánchez Gutiérrez,3332878746,SMS,Crédito personal,15400,75,09-sep-2026,2026-10-06,0,0,,,2026-11-05,"Convenio de pago firmado el 10/11/2026, 8 mensualidades"
+C-1040,Leticia Morales Lara,33 4395 8361,WhatsApp,Microcrédito,50000.00,40,2026-10-14,2026-09-22,4,0,,,28/10/2026,Avisó que viajaba la semana pasada
+C-1030,Marisol Flores Ruiz,33 7441 2540,SMS,Microcrédito,1413.67,7,2026-11-16,2026-09-18,2,0,,,21/11/2026,
+C-1004,Héctor Ibarra Rojas,33 5848 6165,WhatsApp,Crédito de nómina,"5.740,38",33,2026-10-21,04/10/2026,3,0,,,2026-11-14,Llamó el 17/11 inconforme con cargo por comisión. Queja folio Q-2291 abierta
+C-1011,Daniel Ruiz López,3374875105,SMS,Crédito personal,"3.200,00",12,2026-11-11,03/10/2026,0,0,,,2026-11-05,"Convenio de pago firmado el 17/11/2026, 4 mensualidades"
+C-1035,Sergio Aguilar Ibarra,33 3913 9720,WhatsApp,Crédito automotriz,"$4,069.10",1,2026-11-22,2026-10-22,3,0,,,24-oct-2026,Prefiere que lo contacten por la tarde
+C-1056,Verónica Guerrero Reyes,3387398934,WhatsApp,Crédito personal,"3.810,40",40,2026-10-14,24/09/2026,1,0,21-nov-2026,"1.905,20",2026-10-26,Prometió pago por teléfono el 18/11/2026
+C-1001,Juan Jiménez Ruiz,33 2439 1273,WhatsApp,Microcrédito,"$3,000.00",9,2026-11-14,2026-10-29,1,0,,,03-nov-2026,"19/11: respondió por WhatsApp 'ya pagué, dejen de molestarme, voy a poner una queja en CONDUSEF'"
+C-1028,Verónica Morales Cortés,(33) 4907-5036,SMS,Crédito de nómina,1215,9,14-nov-2026,2026-10-13,3,0,2026-11-24,1215,2026-11-07,Prometió pago por teléfono el 20/11/2026
+C-1043,Luis Flores Hernández,33 8820 9638,WhatsApp,Crédito automotriz,"$20,120.84",69,2026-09-15,2026-10-19,3,0,,,25-oct-2026,"Trabaja por cuenta propia, ingresos variables"
+C-1039,Adriana Reyes Salazar,+52 33 1045 7631,WhatsApp,Crédito de nómina,"$3,849.89",21,2026-11-02,2026-10-12,3,0,,,10-nov-2026,Avisó que viajaba la semana pasada
+C-1036,Jorge Hernández Sánchez,3312978865,WhatsApp,Crédito de nómina,"$1,803.75",24,2026-10-30,2026-10-03,0,0,,,21-nov-2026,Contesta siempre al primer mensaje
+C-1024,Teresa Reyes Hernández,33 1520 9400,WhatsApp,Crédito automotriz,2137.23,1,2026-11-22,2026-09-20,2,0,,,,
+C-1057,Elena Vázquez Chávez,+52 33 3584 1628,WhatsApp,Crédito automotriz,"$5,100.00",20,2026-11-03,2026-10-20,2,0,,,04-nov-2026,"Convenio de pago firmado el 20/11/2026, 6 mensualidades"
+C-1010,Ricardo Cortés Gómez,3366059948,SMS,Crédito de nómina,"19,586.16 MXN",48,20/09/2026,28-sep-2026,4,0,,,2026-11-05,Prefiere que lo contacten por la tarde
+C-1059,Juan Castillo Reyes,3318966336,WhatsApp,Crédito de nómina,"2,287.67 MXN",40,14/10/2026,19-oct-2026,2,0,,,2026-11-14,
+C-1047,Sergio Vázquez García,(33) 2347-5703,WhatsApp,Crédito de nómina,"3,646.62 MXN",4,19/11/2026,03-oct-2026,2,0,,,2026-11-06,"Trabaja por cuenta propia, ingresos variables"
+C-1053,LAURA SALAZAR MORALES,33 2721 9357,WhatsApp,Crédito automotriz,"$135,627.72",22,2026-11-01,2026-09-20,2,0,,,09-nov-2026,Referido por sucursal Zapopan
+C-1029,Luis Gutiérrez Ruiz,3357449392,WhatsApp,Crédito automotriz,75780,48,06-oct-2026,2026-10-19,0,0,,,2026-10-28,Cliente desde 2022
+C-1008,Iván Rojas Domínguez,+52 33 8418 1270,WhatsApp,Crédito automotriz,"50,000.01 MXN",39,15/10/2026,26-sep-2026,0,0,,,2026-11-09,Cambió de domicilio en agosto
+C-1045,Luis Jiménez Medina,N/D,WhatsApp,Microcrédito,8285,35,19-oct-2026,2026-10-13,3,0,,,2026-11-03,Cliente desde 2022
