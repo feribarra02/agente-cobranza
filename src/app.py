@@ -96,7 +96,7 @@ def main() -> None:
 
     st.title("Agente de Cobranza Preventiva — Human-in-the-Loop")
     st.caption(
-        "Motor de reglas 100% determinístico + IA acotada (`gemini-2.5-flash`). "
+        "Motor de reglas 100% determinístico + IA acotada (`gemini-3.5-flash-lite`). "
         "Ningún mensaje se envía automáticamente sin aprobación humana."
     )
 
@@ -106,7 +106,7 @@ def main() -> None:
         api_disponible = get_gemini_api_key() is not None
         modo_label = st.radio(
             "Modo de análisis y redacción",
-            options=["Modo Mock Determinístico", "Gemini API (gemini-2.5-flash)"],
+            options=["Modo Mock Determinístico", "Gemini API (gemini-3.5-flash-lite)"],
             index=0,
             help="Si no hay API key o falla Gemini, el sistema usa fallback determinístico automáticamente.",
         )
