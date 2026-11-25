@@ -221,7 +221,7 @@ def redactar_draft(
         for api_attempt in range(max_api_retries):
             try:
                 response = client.models.generate_content(
-                    model="gemini-2.5-flash",
+                    model="gemini-3.5-flash-lite",
                     contents=prompt_actual,
                     config=types.GenerateContentConfig(
                         temperature=0.2,

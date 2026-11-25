@@ -1,6 +1,6 @@
 # Agente de Cobranza Preventiva (Human-in-the-Loop)
 
-Sistema híbrido de cobranza preventiva que combina un **motor 100% determinístico en Python** (limpieza de datos sucios, conciliación de pagos y cascada de reglas) con **IA acotada mediante `google-genai` (`gemini-2.5-flash` + Pydantic Structured Outputs)** únicamente para comprensión semántica del campo `notas` y redacción controlada de borradores SMS/WhatsApp bajo aprobación humana obligatoria (*Human-in-the-Loop*).
+Sistema híbrido de cobranza preventiva que combina un **motor 100% determinístico en Python** (limpieza de datos sucios, conciliación de pagos y cascada de reglas) con **IA acotada mediante `google-genai` (`gemini-3.5-flash-lite` + Pydantic Structured Outputs)** únicamente para comprensión semántica del campo `notas` y redacción controlada de borradores SMS/WhatsApp bajo aprobación humana obligatoria (*Human-in-the-Loop*).
 
 ---
 
@@ -10,7 +10,7 @@ Sistema híbrido de cobranza preventiva que combina un **motor 100% determiníst
 flowchart TD
     A["cuentas.csv + historial_pagos.csv"] --> B["normalizer.py<br/>Fechas ES/ISO, montos Decimal(0.01),<br/>teléfonos y consolidación de duplicados"]
     B --> C{"¿Campo notas no vacío?"}
-    C -- "Sí" --> D["Rol 1 IA: note_analyzer.py<br/>gemini-2.5-flash (temp=0.0, AnalisisNotas)<br/>+ fallback regex / anti-prompt-injection"]
+    C -- "Sí" --> D["Rol 1 IA: note_analyzer.py<br/>gemini-3.5-flash-lite (temp=0.0, AnalisisNotas)<br/>+ fallback regex / anti-prompt-injection"]
     C -- "No" --> E["AnalisisNotas vacío"]
     D --> F["reconciler.py<br/>Cruce historial, buen historial, +1 promesa vencida,<br/>patrón C-1007 y validación promesa-nota"]
     E --> F
@@ -18,7 +18,7 @@ flowchart TD
     G -- "P1" --> P1["No Contactar / En Espera"]
     G -- "P2" --> P2["Revisión Especialista Cobranza<br/>(Bloqueado antes del LLM redactor)"]
     G -- "P3" --> P3["Escalamiento a Gerente<br/>(FichaGerente con regla exacta)"]
-    G -- "P4" --> H["Rol 2 IA: gemini_agent.py<br/>gemini-2.5-flash (temp=0.2, DraftRecordatorio)"]
+    G -- "P4" --> H["Rol 2 IA: gemini_agent.py<br/>gemini-3.5-flash-lite (temp=0.2, DraftRecordatorio)"]
     H --> I{"Guardrail determinístico<br/>Cliente, $monto, fecha, sucursal+SPEI,<br/>aviso de llamada en 31-60d, <=400 chars"}
     I -- "Válido" --> HITL["Bandeja Streamlit HITL<br/>Aprobar / Editar / Rechazar<br/>(Sin envío automático)"]
     I -- "Falla / Error API" --> FB["Fallback a Template Aprobado"] --> HITL
@@ -29,9 +29,9 @@ flowchart TD
 | Componente | Tecnología | Justificación |
 | --- | --- | --- |
 | Limpieza de fechas, montos (`Decimal`), teléfonos y duplicados | **Python determinístico** (`src/normalizer.py`) | Cero tolerancia a errores aritméticos o redondeos en saldos vencidos. |
-| Comprensión de texto libre en `notas` | **Gemini `gemini-2.5-flash` (`temp=0.0`, `AnalisisNotas`)** con fallback regex (`src/note_analyzer.py`) | Interpreta contexto humano complejo (ej. diferenciar `"convenio cancelado"` o `"queja cerrada"` de casos activos) sin hardcodear todas las variantes lingüísticas. |
+| Comprensión de texto libre en `notas` | **Gemini `gemini-3.5-flash-lite` (`temp=0.0`, `AnalisisNotas`)** con fallback regex (`src/note_analyzer.py`) | Interpreta contexto humano complejo (ej. diferenciar `"convenio cancelado"` o `"queja cerrada"` de casos activos) sin hardcodear todas las variantes lingüísticas. |
 | Conciliación, umbrales, fechas y cascada `P1→P2→P3→P4` | **Python determinístico** (`src/reconciler.py`, `src/rules_engine.py`) | Las políticas de contacto, precedencia y escalamiento deben ser 100% auditables y reproducibles. |
-| Redacción de recordatorios SMS / WhatsApp | **Gemini `gemini-2.5-flash` (`temp=0.2`, `DraftRecordatorio`)** + guardrails + fallback (`src/gemini_agent.py`) | Adapta el tono al canal/preferencia del cliente dentro de límites estrictos verificados automáticamente antes de mostrarlo al operador. |
+| Redacción de recordatorios SMS / WhatsApp | **Gemini `gemini-3.5-flash-lite` (`temp=0.2`, `DraftRecordatorio`)** + guardrails + fallback (`src/gemini_agent.py`) | Adapta el tono al canal/preferencia del cliente dentro de límites estrictos verificados automáticamente antes de mostrarlo al operador. |
 | Decisión final de envío | **Humano (Streamlit HITL)** (`src/app.py`) | Nunca existe envío automático; el operador aprueba, edita o rechaza cada borrador. |
 
 ---
@@ -112,7 +112,7 @@ pytest -v
    - *Riesgo:* Una nota con instrucciones maliciosas podría manipular al LLM redactor para filtrar datos o cambiar montos.
    - *Mitigación:* Las cuentas con queja/disputa o notas sensibles se bloquean en P2 **antes** de llegar al LLM redactor; `note_analyzer.py` delimita la nota en `<nota_cliente>` con detector previo por regex y nunca tiene acceso a herramientas externas ni a modificación de montos/reglas.
 3. **Rate limits (HTTP 429) o indisponibilidad de la API gratuita de Gemini:**
-   - *Riesgo:* Interrupción de la operación diaria por cuotas de `gemini-2.5-flash`.
+   - *Riesgo:* Interrupción de la operación diaria por cuotas de `gemini-3.5-flash-lite`.
    - *Mitigación:* Backoff exponencial automático en `note_analyzer.py` y `gemini_agent.py`, y degradación elegante a extractor determinístico por regex y templates aprobados por segmento (`origen_borrador="template_fallback"`), manteniendo 100% la continuidad operativa.
 
 ---
